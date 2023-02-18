@@ -197,14 +197,21 @@ Tried also adding BatchNormalization and different combinations of Dense layers.
 27. Activation - Softmax [10]
 
 Model worked on parameters:
+
 win_length = 256
+
 n_batch_size = 64
+
 n_epoch = 20
+
 n_mels_bank = 20
 
 loss = categorical crossentropy
+
 optimizer = ADAM
+
 metric = accuracy
+
 test_percentage = 0.2
 
 ### Effectiveness on evaluation data:
