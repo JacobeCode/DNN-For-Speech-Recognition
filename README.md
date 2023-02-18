@@ -4,7 +4,7 @@
 
 ### Description of research
 
-1. Implementation of pre-processing --> Random neural network
+## 1. Implementation of pre-processing --> Random neural network
 
 ### Build:
 1. Conv2D [16, 3x3]                                                                     
@@ -19,7 +19,7 @@ Convolution and max_pool added because of "image" based approach.
 ### Effectiveness on evaluation data:
 ### App. 30%
 
-2. Adding proper convolution --> double Conv2D - MaxPool layers
+## 2. Adding proper convolution --> double Conv2D - MaxPool layers
 
 ### Build:
 1. Conv2D [32, 6x6]                                                                     
@@ -38,7 +38,7 @@ Also added additional Dense layer for better performance.
 ### Effectiveness on evaluation data:
 ### App. 40%
 
-3. Testing Dropout
+## 3. Testing Dropout
 
 ### Build:
 Added dropout layer (0.5) between Dense(128) and Dense(10).
@@ -51,7 +51,7 @@ Tested in terms of over-train and performance.
 
 ### DISCLAIMER - all the builds shown above worked on MFCC (13) with ADAM optimizer at lr=0.001.
 
-4. Adding CMVN normalization
+## 4. Adding CMVN normalization
 
 ### Build:
 Added CMVN in pre-processing.
@@ -62,7 +62,7 @@ Using version from SpeechPy.
 ### Effectiveness on evaluation data:
 ### App. 57%
 
-5. Adding another Dense layer and less dropout.
+## 5. Adding another Dense layer and less dropout.
 
 ### Build:
 Adding the same Dense layer and less dropout.
@@ -71,7 +71,7 @@ Adding the same Dense layer and less dropout.
 ### Dense : App. 54%
 ### Lower Dropout (0.3) : App. 55%
 
-6. Adding Cross-Validation (tested on model from point 04).
+## 6. Adding Cross-Validation (tested on model from point 04).
 
 ### Build:
 Unchanged from point 04.
@@ -80,7 +80,7 @@ Tested on 100 epoch's with 11 fold's of Cross-Validation.
 ### Effectiveness on evaluation data:
 ### App. 60%
 
-7. Testing adding delta features to MFCC.
+## 7. Testing adding delta features to MFCC.
 
 ### Build:
 Added Delta features.
@@ -94,14 +94,14 @@ Also tested different epoch's sizes and implemented EarlyStopping.
 
 ### DISCLAIMER - After this one the CMVN was deleted.
 
-8. Tested different DCT-Types on same settings.
+## 8. Tested different DCT-Types on same settings.
 
 ### Effectiveness on evaluation data:
 ### DCT-1 : 62.5%
 ### DCT-2 : 61.06%
 ### DCT-3 : 59.85%
 
-9. Tested another features.
+## 9. Tested another features.
 
 Tested:
 1. Double-trained model.
@@ -113,7 +113,7 @@ Tested:
 ### Results:
 No noticeable difference.
 
-10. Added strides to Convolution2D layer.   
+## 10. Added strides to Convolution2D layer.   
 
 In comprehension with used solutions like AlexNet decided to try strides.
 
@@ -123,7 +123,7 @@ Added strides = 3 to first Conv2D.
 ### Effectiveness on evaluation data:
 ### App. 53%
 
-11. Added double strides to Convolution2D layer.   
+## 11. Added double strides to Convolution2D layer.   
 
 ### Build:
 Added strides = 1 to first and second Conv2D.
@@ -147,7 +147,7 @@ Added only strides = 2 to second Conv2D.
 ### Effectiveness on evaluation data:
 ### App. 70.15% and 71.06% (with smaller batch_size = 32)
 
-12. Testing LSTM's layers and different approaches:
+## 12. Testing LSTM's layers and different approaches:
 
 - model from point 11 + changed filters in Conv2D[16, 6x6; 3x3] --> App. 59%
 - model from point 11 + changed filters in Conv2D[smaller - both 3x3] --> App. 56%
@@ -159,7 +159,7 @@ Added only strides = 2 to second Conv2D.
 
 Tried also adding BatchNormalization and different combinations of Dense layers.
 
-13. Final build - one bidirectional LSTM added with 4 Dense layers.
+## 13. Final build - one bidirectional LSTM added with 4 Dense layers.
 
 ### Build:
 1. Conv2D [32, 6x6]                                                                     
