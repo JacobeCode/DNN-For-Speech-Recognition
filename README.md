@@ -2,7 +2,13 @@
 
 ### Second Take on First Speech Technology Project - recognition of numbers with neural network.
 
-### Description of research
+# Description of research
+
+### DISCLAIMER
+
+Repository doesn't includes evaluation script.
+
+During reseacch tested MFCC, spectrograms and mel-spectrograms. Due to best performance of the last one, it is included in final model.
 
 ## 1. Implementation of pre-processing --> Random neural network
 
