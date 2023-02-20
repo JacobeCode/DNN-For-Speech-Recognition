@@ -2,6 +2,16 @@
 
 ### Second Take on First Speech Technology Project - recognition of numbers with neural network.
 
+### Content
+
+- spectrogram.py - contains final model wite use of mel-spectrogram
+- main.py - contains code with use of MFCC
+- main.ipynb - same as above in format for Google Colab
+- neural.yml - YAML file with libraries
+- Model - folder with current saved model
+- Best Models - four best models (last one with nearly 75% accuracy on evaluation data)
+- CSV - folder with CSV file from current run - used for evaluation
+
 # Description of research
 
 ### DISCLAIMER
