@@ -139,6 +139,9 @@ display(audio_train_database)
 
 # Calculation of mel-spectrogram's is based on search for longest recording in evaluation base and manipulating other recordings (by zero-padding or cutting) to same sizes.
 # Preprocessing of evaluation database - calculating mel-spectrogram's [with normalization and reshape to proper input shape]
+
+# In this version the MFCC is used
+
 os.chdir(root_dir)
 
 eval_set_base = pd.DataFrame()
