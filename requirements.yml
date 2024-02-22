@@ -1,4 +1,4 @@
-name: neural
+name: requirements
 channels:
   - conda-forge
   - anaconda
@@ -17,6 +17,6 @@ dependencies:
       - google == 3.0.0
       - DateTime == 5.0
       - pygpu == 0.7.6
-      - speechpy ==
-      - scipy ==
-      - theano ==
+      - speechpy
+      - scipy
+      - theano
