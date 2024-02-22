@@ -329,18 +329,3 @@ os.chdir(root_dir)
 os.chdir(CSV_dir)
 evaluate('results_ia.csv')
 os.chdir(root_dir)
-
-# strides = 3 --> 53%
-# double_strided (1) --> 62% - (1)(2) --> 37%
-# second_strided (2) --> 70.15% --> batch 32 = 71.06%
-# best + 16 filters 6x6, 3x3 --> 59 %
-# best + smaller filters 3x3 --> 56 %
-# double LSTMs --> 50.30 %
-# LSTM without Conv2D --> 57.27%
-# double Conv2D with double LTMS --> 42.42%
-# double Conv2D with double LSTM (no pool) --> 62.88%
-# double Conv2D with double LSTM (instead of pools) --> 54.24 %
-# Best 04 - 73.6 % / 72.58% without one dense layer at 32 batch size
-# Best with higher dense - 60 %
-# Best 04 with Standard Scaler - 66.82 %
-
