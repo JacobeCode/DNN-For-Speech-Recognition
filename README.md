@@ -1,6 +1,10 @@
-# Neural_Network_For_Speech_Recognition
+# DNN For Speech Recognition
+## Recognition of digits with neural network
 
-### Second Take on First Speech Technology Project - recognition of numbers with neural network.
+### This repository contains a modified project originating from Speech Technology classes. 
+Original work during studies was done with the use of GMM (Gaussian Mixture Models). 
+
+This repository contains a new version with the study and use of neural networks.
 
 ### Content
 
