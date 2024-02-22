@@ -11,20 +11,20 @@ This repository contains a new version with the study and use of neural networks
 - final.py - full Python code providing all necessary steps for training neural network (best architecture with the use of mel-spectrograms)
 - MFCC_main.py - full Python code providing all necessary steps for training neural network (version adjusted to use of MFCC)
 - MFCC_main.ipynb - same as above, but in ipynb format (for use in Google Colab)
-- neural.yml - YAML file with libraries
-- Model - folder with current saved model
-- Best Models - four best models (last one with nearly 75% accuracy on evaluation data)
-- CSV - folder with CSV file from current run - used for evaluation
+- requirements.yml - YAML file with all necessary tools and libraries
+- Model - directory with the last tested model
+- Best Models - directory with the four best models (last one with nearly 75% accuracy on evaluation data)
+- CSV - folder with CSV file (created during "train and test" with results) from current run (used for evaluation)
 
 # Description of research
 
 ### DISCLAIMER
 
-Repository doesn't includes evaluation script.
+The repository doesn't include evaluation script as it was not created by me. Scores were evaluated by comparing results saved in a .csv file to a similar file with correct predictions.
 
-During reseacch tested MFCC, spectrograms and mel-spectrograms. Due to best performance of the last one, it is included in final model.
+During research MFCC, spectrograms and mel-spectrograms were tested. The best performance was observed with the mel-spectrograms.
 
-## 1. Implementation of pre-processing --> Random neural network
+## 1. Implementation of pre-processing (Random neural network)
 
 ### Build:
 1. Conv2D [16, 3x3]                                                                     
@@ -135,7 +135,7 @@ No noticeable difference.
 
 ## 10. Added strides to Convolution2D layer.   
 
-In comprehension with used solutions like AlexNet decided to try strides.
+In comparison with used solutions like AlexNet decided to try strides.
 
 ### Build:
 Added strides = 3 to first Conv2D.
@@ -177,7 +177,7 @@ Added only strides = 2 to second Conv2D.
 - model from point 11 + double Conv2D with double LSTM (no pool - LSTM after Conv2D) --> 62.88%
 - model from point 11 + double Conv2D with double LSTM (instead of pools - LSTM between Conv2D) --> 54.24 %
 
-Tried also adding BatchNormalization and different combinations of Dense layers.
+Also tried adding BatchNormalization and different combinations of Dense layers.
 
 ## 13. Final build - one bidirectional LSTM added with 4 Dense layers.
 
