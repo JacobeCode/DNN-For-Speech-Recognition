@@ -4,11 +4,11 @@
 ### This repository contains a modified project originating from Speech Technology classes. 
 Original work during studies was done with the use of GMM (Gaussian Mixture Models). 
 
-This repository contains a new version with the study and use of neural networks.
+This repository contains a new version with the study and use of neural networks (Keras).
 
 ### Content
 
-- spectrogram.py - contains final model wite use of mel-spectrogram
+- final.py - full Python code providing all necessary steps and tools for training neural network (best architecture with the use of mel-spectrograms)
 - main.py - contains code with use of MFCC
 - main.ipynb - same as above in format for Google Colab
 - neural.yml - YAML file with libraries
