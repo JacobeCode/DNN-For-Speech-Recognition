@@ -217,7 +217,7 @@ display(audio_train_database)
 print("Eval Recordings database : ")
 display(eval_set_base)
 
-# Current build of the model --> this one reached best results
+# Current build of the model
 model = Sequential()
 model.add(Conv2D(32, (6, 6), padding="valid", activation="relu", input_shape=(n_mfcc, max_len, 1)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
