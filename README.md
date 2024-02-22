@@ -8,8 +8,8 @@ This repository contains a new version with the study and use of neural networks
 
 ### Content
 
-- final.py - full Python code providing all necessary steps and tools for training neural network (best architecture with the use of mel-spectrograms)
-- main.py - contains code with use of MFCC
+- final.py - full Python code providing all necessary steps for training neural network (best architecture with the use of mel-spectrograms)
+- main.py - full Python code providing all necessary steps for training neural network (version adjusted to use of MFCC)
 - main.ipynb - same as above in format for Google Colab
 - neural.yml - YAML file with libraries
 - Model - folder with current saved model
